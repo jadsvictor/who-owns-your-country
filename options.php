@@ -20,6 +20,26 @@ function whoowns_register_settings() {
 	register_setting( 'whoowns', 'whoowns_cron_ref_hour' );
 	register_setting( 'whoowns', 'whoowns_cron_frequency' );
 }
+function whoowns_register_settings() {
+register_setting( 'whoowns', 'whoowns_default_shareholders_number' );
+register_setting( 'whoowns', 'whoowns_default_related_owners_number' );
+register_setting( 'whoowns', 'whoowns_supported_file_types' );
+register_setting( 'whoowns', 'whoowns_owners_per_page' );
+register_setting( 'whoowns', 'whoowns_owner_image_size' );
+register_setting( 'whoowns', 'whoowns_owner_slug' );
+register_setting( 'whoowns', 'whoowns_currency' );
+register_setting( 'whoowns', 'whoowns_legends_icon_size' );
+register_setting( 'whoowns', 'whoowns_legends_format' );
+register_setting( 'whoowns', 'whoowns_threshold_show_names_in_network' );
+register_setting( 'whoowns', 'whoowns_threshold_show_arrows_in_network_when_move' );
+register_setting( 'whoowns', 'whoowns_news_search_api' );
+register_setting( 'whoowns', 'whoowns_news_sources' );
+register_setting( 'whoowns', 'whoowns_news_date_format' );
+register_setting( 'whoowns', 'whoowns_reference_owner' );
+register_setting( 'whoowns', 'whoowns_cron_ref_hour' );
+register_setting( 'whoowns', 'whoowns_cron_frequency' );
+}
+
 
 function whoowns_set_defaults() {
 	update_option('whoowns_owner_slug','owners');
